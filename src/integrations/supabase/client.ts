@@ -2,15 +2,8 @@
 import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "https://placeholder-project-id.supabase.co";
-const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || "placeholder-key-to-prevent-crash";
-
-if (!import.meta.env.VITE_SUPABASE_URL || !import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY) {
-  console.warn(
-    "Supabase environment variables (VITE_SUPABASE_URL, VITE_SUPABASE_PUBLISHABLE_KEY) are missing. " +
-    "Please configure them in your environment settings (e.g., Vercel dashboard) to enable database features."
-  );
-}
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "https://mywabmovslyuogmrknls.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im15d2FibW92c2x5dW9nbXJrbmxzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk0MjU4OTcsImV4cCI6MjA5NTAwMTg5N30.TYS8mQUAOXI02phY6TcCmImmEiPWFXqW6I1jwRWo45Y";
 
 // Import the supabase client like this:
 // import { supabase } from "@/integrations/supabase/client";
